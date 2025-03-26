@@ -9,13 +9,16 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
-  block-size: 100%;
+  block-size: 100%;  
 }
 
 h1,
@@ -70,20 +73,13 @@ ol {
   white-space: nowrap;
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-}
-
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
   grid-template-areas: "result details";
   align-items: end;
-  gap: 30px;
-  align-self: start;
-  width: 1140px;
-  padding-top: 133px;
+  gap: 30px;  
+  width: 1140px;  
 }
 
 .result {    
@@ -92,8 +88,8 @@ ol {
 
 .result__video-container {
   position: relative;
-  width: 100%;
-  padding-bottom: 11px;
+  width: 100%;  
+  margin-bottom: 11px;
 }
 
 .result__video {
@@ -331,10 +327,13 @@ ol {
 }
 
 .content__video-card-description {
+  display: -webkit-box;
+  overflow: hidden;
   font-weight: 400;
   font-size: 17px;
   line-height: 16.2px;
   letter-spacing: 0.4px;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   -moz-line-clamp: 4;
   -ms-line-clamp: 4;
